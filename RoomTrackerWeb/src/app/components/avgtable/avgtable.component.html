@@ -1,0 +1,14 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Stanza</th>
+            <th scope="col">Media minuti</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let room of roomsAvg">
+            <td>{{ room.name | titlecase }}</td>
+            <td>{{ room.avg }}</td>
+        </tr>
+    </tbody>
+</table>
